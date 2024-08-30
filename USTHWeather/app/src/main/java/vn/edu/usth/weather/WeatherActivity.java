@@ -1,16 +1,9 @@
 package vn.edu.usth.weather;
 
-import static vn.edu.usth.weather.R.*;
-
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.util.Log;
-import android.view.View;
 import android.widget.TextView;
-import android.app.Fragment;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -23,36 +16,12 @@ public class WeatherActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_weather);
-//        View v = findViewById(id.main);
-        ForecastFragment frag = new ForecastFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.main, frag).commit();
-        Log.i("Weather","Create here");
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
+            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            return insets;
+        });
+        TextView mTextView = findViewById(R.id.main);
+        mTextView.setText("Hello World");
     }
-
-    @Override
-    protected void onStart(){
-        super.onStart();
-        Log.i("Weather","Start here");
-    }
-    @Override
-    protected void onResume(){
-        super.onResume();
-        Log.i("Weather","Resume here");
-    }
-    @Override
-    protected void onPause(){
-        super.onPause();
-        Log.i("Weather","Pause here");
-    }
-    @Override
-    protected void onStop(){
-        super.onStop();
-        Log.i("Weather","Stop here");
-    }
-    @Override
-    protected void onDestroy(){
-        super.onDestroy();
-        Log.i("Weather","Destroy here");
-    }
-
 }
