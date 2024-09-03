@@ -5,15 +5,14 @@ import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
 
-/**
- * A simple {@link Fragment} subclass.
- * Use the {@link ForecastFragment#newInstance} factory method to
- * create an instance of this fragment.
- */
 public class ForecastFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
@@ -35,7 +34,7 @@ public class ForecastFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ForecastFragment.
+     * @return A new instance of fragment Blank.
      */
     // TODO: Rename and change types and number of parameters
     public static ForecastFragment newInstance(String param1, String param2) {
@@ -54,14 +53,47 @@ public class ForecastFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
+        
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_forecast, container, false);
-        view.setBackgroundColor(Color.GREEN);
-        // Inflate the layout for this fragment
+        view.setBackgroundColor(Color.GREEN); // Use a color resource instead of hardcoding
+
+        LinearLayout linearLayout = view.findViewById(R.id.main_layout);
+//        TextView textView = view.findViewById(R.id.text_view);
+//        ImageView imageView = view.findViewById(R.id.weather_icon);
+//
+        linearLayout.setOrientation(LinearLayout.VERTICAL);
+//        textView.setText("Thursday");
+//        imageView.setImageResource(R.drawable.weather);
+
+        addTextView("Thursday", linearLayout);
+        addImageView(R.drawable.weather, linearLayout);
         return view;
     }
+
+    public void addTextView(String text, LinearLayout linearLayout){
+        TextView textView = new TextView(getActivity());
+        textView.setText(text);
+        textView.setLayoutParams(new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+        ));
+        linearLayout.addView(textView);
+    }
+    public void addImageView(int image, LinearLayout linearLayout){
+        ImageView imageView = new ImageView(getActivity());
+        imageView.setImageResource(image);
+        imageView.setLayoutParams(new ViewGroup.LayoutParams(
+                ViewGroup.LayoutParams.WRAP_CONTENT,
+                ViewGroup.LayoutParams.WRAP_CONTENT
+        ));
+        linearLayout.addView(imageView);
+    }
+
+
+
 }
