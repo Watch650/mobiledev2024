@@ -1,8 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".ForecastFragment"/>
+    android:layout_height="wrap_content"
+    android:padding="30px"
+    android:orientation="vertical"
+    tools:context=".ForecastFragment">
+
+    <LinearLayout
+        android:id="@+id/tile"
+        android:layout_height="200px"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:padding="20px"
+        android:background="#5061BB">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="USTH Weather"/>
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:src="@drawable/weather"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/tile1"
+        android:layout_height="200px"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:padding="20px"
+        android:background="#DFDFFF">
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Monday"/>
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:src="@drawable/weather"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Partly Cloudy\n24C - 31C"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/tile2"
+        android:layout_height="200px"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:padding="20px"
+        android:background="#DFDFFF">
+        <TextView
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Tuesday"/>
+        <ImageView
+            android:layout_width="200px"
+            android:layout_height="match_parent"
+            android:src="@drawable/weather"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:text="Showers\n24C - 30C"/>
+    </LinearLayout>
+</LinearLayout>

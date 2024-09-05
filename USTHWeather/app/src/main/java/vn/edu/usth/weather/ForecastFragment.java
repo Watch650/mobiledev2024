@@ -60,40 +60,19 @@ public class ForecastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_forecast, container, false);
-        view.setBackgroundColor(Color.GREEN); // Use a color resource instead of hardcoding
-
-        LinearLayout linearLayout = view.findViewById(R.id.main_layout);
+//        view.setBackgroundColor(Color.GREEN);
+//        LinearLayout linearLayout = view.findViewById(R.id.main_layout);
 //        TextView textView = view.findViewById(R.id.text_view);
 //        ImageView imageView = view.findViewById(R.id.weather_icon);
 //
-        linearLayout.setOrientation(LinearLayout.VERTICAL);
+//        linearLayout.setOrientation(LinearLayout.VERTICAL);
 //        textView.setText("Thursday");
 //        imageView.setImageResource(R.drawable.weather);
 
-        addTextView("Thursday", linearLayout);
-        addImageView(R.drawable.weather, linearLayout);
+//        addTextView("Thursday", linearLayout);
+//        addImageView(R.drawable.weather, linearLayout);
+
+
         return view;
     }
-
-    public void addTextView(String text, LinearLayout linearLayout){
-        TextView textView = new TextView(getActivity());
-        textView.setText(text);
-        textView.setLayoutParams(new ViewGroup.LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-        ));
-        linearLayout.addView(textView);
-    }
-    public void addImageView(int image, LinearLayout linearLayout){
-        ImageView imageView = new ImageView(getActivity());
-        imageView.setImageResource(image);
-        imageView.setLayoutParams(new ViewGroup.LayoutParams(
-                ViewGroup.LayoutParams.WRAP_CONTENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT
-        ));
-        linearLayout.addView(imageView);
-    }
-
-
-
 }
