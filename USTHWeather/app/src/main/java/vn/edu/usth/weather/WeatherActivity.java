@@ -20,7 +20,13 @@ public class WeatherActivity extends AppCompatActivity {
 //            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
 //            return insets;
 //        });
+        WeatherFragment secondFragment = new WeatherFragment();
         ForecastFragment firstFragment = new ForecastFragment();
         getSupportFragmentManager().beginTransaction().add(R.id.main, firstFragment).commit();
+//        getSupportFragmentManager().beginTransaction()
+//                .replace(R.id.main, secondFragment, "second_layout")
+//                .setReorderingAllowed(true)
+//                .addToBackStack("main_layout").commit();
+//        getSupportFragmentManager().beginTransaction().add(R.id.main, secondFragment).commit();
     }
 }

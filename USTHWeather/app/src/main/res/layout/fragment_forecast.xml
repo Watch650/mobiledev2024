@@ -3,46 +3,47 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main_layout"
+    android:tag="main_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".ForecastFragment">
 
-    <FrameLayout
-        android:id="@+id/tile"
-        android:layout_height="200px"
-        android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:padding="50px"
-        android:background="#5061BB">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            android:gravity="center"
-            android:text="USTH Weather"/>
-        <LinearLayout
-            android:layout_width="250px"
-            android:layout_height="match_parent"
-            android:layout_gravity="end"
-            android:gravity="center">
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="70px"
-                android:layout_weight="0.5"
-                android:src="@drawable/reload"
-                app:tint="@color/white" />
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="70px"
-                android:layout_weight="0.5"
-                android:src="@drawable/settings"
-                app:tint="@color/white" />
-        </LinearLayout>
-    </FrameLayout>
+<!--    <FrameLayout-->
+<!--        android:id="@+id/tile"-->
+<!--        android:layout_height="200px"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:orientation="horizontal"-->
+<!--        android:layout_gravity="center_horizontal"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="50px"-->
+<!--        android:background="#5061BB">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:textSize="25sp"-->
+<!--            android:gravity="center"-->
+<!--            android:text="USTH Weather"/>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="250px"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_gravity="end"-->
+<!--            android:gravity="center">-->
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="70px"-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:src="@drawable/reload"-->
+<!--                app:tint="@color/white" />-->
+<!--            <ImageView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="70px"-->
+<!--                android:layout_weight="0.5"-->
+<!--                android:src="@drawable/settings"-->
+<!--                app:tint="@color/white" />-->
+<!--        </LinearLayout>-->
+<!--    </FrameLayout>-->
 
     <LinearLayout
         android:id="@+id/tile_container"
