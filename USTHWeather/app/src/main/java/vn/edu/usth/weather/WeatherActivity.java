@@ -1,5 +1,6 @@
 package vn.edu.usth.weather;
 
+import android.app.FragmentTransaction;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -22,7 +23,8 @@ public class WeatherActivity extends AppCompatActivity {
 //        });
         WeatherFragment secondFragment = new WeatherFragment();
         ForecastFragment firstFragment = new ForecastFragment();
-        getSupportFragmentManager().beginTransaction().add(R.id.main, firstFragment).commit();
+//        getSupportFragmentManager().beginTransaction().add(R.id.second_layout, secondFragment).commit();
+//        getSupportFragmentManager().beginTransaction().add(R.id.main, firstFragment).commit();
 //        getSupportFragmentManager().beginTransaction()
 //                .replace(R.id.main, secondFragment, "second_layout")
 //                .setReorderingAllowed(true)

@@ -4,18 +4,27 @@
     android:id="@+id/second_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#7FFFD4"
     android:tag="second_layout"
     tools:context=".WeatherFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:textSize="20sp"
         android:text="12C\nCloudy" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:textSize="15sp"
         android:text="Paris" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:src="@drawable/cloud"/>
 </RelativeLayout>
