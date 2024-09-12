@@ -1,65 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".WeatherActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#5061BB"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:text="USTH Weather"
+            android:textColor="@color/white"
+            android:textSize="22sp" />
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:src="@drawable/reload"
+                app:tint="@color/white"/>
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/settings"
+                app:tint="@color/white"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
-        <FrameLayout
-            android:id="@+id/header"
-            android:layout_height="200px"
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
             android:layout_width="match_parent"
-            android:orientation="horizontal"
-            android:layout_gravity="center_horizontal"
-            android:gravity="center"
-            android:padding="50px"
-            android:background="#5061BB">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:textColor="@color/white"
-                android:textSize="25sp"
-                android:gravity="center"
-                android:text="USTH Weather"/>
-            <LinearLayout
-                android:layout_width="250px"
-                android:layout_height="match_parent"
-                android:layout_gravity="end"
-                android:gravity="center">
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="70px"
-                    android:layout_weight="0.5"
-                    android:src="@drawable/reload"
-                    app:tint="@color/white" />
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="70px"
-                    android:layout_weight="0.5"
-                    android:src="@drawable/settings"
-                    app:tint="@color/white" />
-            </LinearLayout>
-        </FrameLayout>
-        <LinearLayout
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:tabSelectedTextColor="@color/black">
+
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/view_pager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="50px">
-            <fragment
-                android:id="@+id/second_layout"
-                class="vn.edu.usth.weather.WeatherFragment"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-            <fragment
-                android:id="@+id/main_layout"
-                class="vn.edu.usth.weather.ForecastFragment"
-                android:layout_width="match_parent"
-                android:layout_height="750dp"/>
-        </LinearLayout>
+            android:layout_height="wrap_content"/>
     </LinearLayout>
-</ScrollView>
+</LinearLayout>
