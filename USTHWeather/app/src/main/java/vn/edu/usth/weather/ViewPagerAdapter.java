@@ -11,7 +11,7 @@ import vn.edu.usth.weather.fragments.ParisWeatherAndForecastFragment;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
 
-    private String[] titles = new String[] {"PARIS, FRANCE", "HANOI, VIETNAM", "HO CHI MINH CITY, VIETNAM"};
+    private String titles[] = new String[] {"PARIS, FRANCE", "HANOI, VIETNAM", "HO CHI MINH CITY, VIETNAM"};
 
     public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
