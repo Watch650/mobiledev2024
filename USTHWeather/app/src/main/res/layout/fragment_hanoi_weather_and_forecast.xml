@@ -4,10 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HanoiWeatherAndForecastFragment"
+    tools:context=".fragments.HanoiWeatherAndForecastFragment"
     android:padding="20dp">
 
     <fragment
+        android:id="@+id/hanoi_weather"
+        class="vn.edu.usth.weather.fragments.HanoiWeatherFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_hanoi_weather"/>
@@ -15,6 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <fragment
+            android:id="@+id/hanoi_forecast"
+            class="vn.edu.usth.weather.fragments.ForecastFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:layout="@layout/fragment_forecast"/>

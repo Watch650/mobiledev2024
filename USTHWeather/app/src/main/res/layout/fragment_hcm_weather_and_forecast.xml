@@ -4,10 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HCMWeatherAndForecastFragment"
+    tools:context=".fragments.HCMWeatherAndForecastFragment"
     android:padding="20dp">
 
     <fragment
+        android:id="@+id/hcm_weather"
+        class="vn.edu.usth.weather.fragments.HCMWeatherFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_hcm_weather"/>
@@ -15,6 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <fragment
+            android:id="@+id/hcm_forecast"
+            class="vn.edu.usth.weather.fragments.ForecastFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:layout="@layout/fragment_forecast"/>

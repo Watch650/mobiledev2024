@@ -7,7 +7,7 @@
     android:orientation="vertical"
     android:background="#7FFFD4"
     android:tag="second_layout"
-    tools:context=".ParisWeatherFragment"
+    tools:context=".fragments.ParisWeatherFragment"
     android:padding="10dp">
 
     <RelativeLayout

@@ -1,4 +1,4 @@
-package vn.edu.usth.weather;
+package vn.edu.usth.weather.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -7,12 +7,14 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
+import vn.edu.usth.weather.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link HanoiWeatherAndForecastFragment#newInstance} factory method to
+ * Use the {@link HanoiWeatherFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class HanoiWeatherAndForecastFragment extends Fragment {
+public class HanoiWeatherFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -23,7 +25,7 @@ public class HanoiWeatherAndForecastFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public HanoiWeatherAndForecastFragment() {
+    public HanoiWeatherFragment() {
         // Required empty public constructor
     }
 
@@ -33,11 +35,11 @@ public class HanoiWeatherAndForecastFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ParisWeatherAndForecastFragment.
+     * @return A new instance of fragment ParisWeatherFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static HanoiWeatherAndForecastFragment newInstance(String param1, String param2) {
-        HanoiWeatherAndForecastFragment fragment = new HanoiWeatherAndForecastFragment();
+    public static HanoiWeatherFragment newInstance(String param1, String param2) {
+        HanoiWeatherFragment fragment = new HanoiWeatherFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -58,6 +60,6 @@ public class HanoiWeatherAndForecastFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hanoi_weather_and_forecast, container, false);
+        return inflater.inflate(R.layout.fragment_hanoi_weather, container, false);
     }
 }

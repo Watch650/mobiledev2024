@@ -1,4 +1,4 @@
-package vn.edu.usth.weather;
+package vn.edu.usth.weather.fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -6,6 +6,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
+
+import vn.edu.usth.weather.R;
 
 /**
  * A simple {@link Fragment} subclass.

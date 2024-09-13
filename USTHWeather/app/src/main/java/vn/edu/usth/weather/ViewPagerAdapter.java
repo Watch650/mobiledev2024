@@ -1,25 +1,20 @@
 package vn.edu.usth.weather;
 
-import android.widget.Switch;
-
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
-import androidx.fragment.app.FragmentManager;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import vn.edu.usth.weather.fragments.HCMWeatherAndForecastFragment;
+import vn.edu.usth.weather.fragments.HanoiWeatherAndForecastFragment;
+import vn.edu.usth.weather.fragments.ParisWeatherAndForecastFragment;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
 
-    private String[] titles = new String[]{"PARIS, FRANCE", "HANOI, VIETNAM","HO CHI MINH CITY, VIETNAM"};
+    private String[] titles = new String[] {"PARIS, FRANCE", "HANOI, VIETNAM", "HO CHI MINH CITY, VIETNAM"};
 
     public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
         super(fragmentActivity);
-    }
-
-    @Override
-    public int getItemCount() {
-        return titles.length;
     }
 
     @NonNull
@@ -32,9 +27,13 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
                 return new HanoiWeatherAndForecastFragment();
             case 2:
                 return new HCMWeatherAndForecastFragment();
-            default:
-                return new ParisWeatherAndForecastFragment();
         }
+        return new ParisWeatherAndForecastFragment();
+    }
+
+    @Override
+    public int getItemCount() {
+        return titles.length;       // return number of pages fot ViewPager
     }
 
 }

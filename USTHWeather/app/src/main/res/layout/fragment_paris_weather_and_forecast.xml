@@ -4,10 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ParisWeatherAndForecastFragment"
+    tools:context=".fragments.ParisWeatherAndForecastFragment"
     android:padding="20dp">
 
     <fragment
+        android:id="@+id/paris_weather"
+        class="vn.edu.usth.weather.fragments.ParisWeatherFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:layout="@layout/fragment_paris_weather"/>
@@ -15,6 +17,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <fragment
+            android:id="@+id/paris_forecast"
+            class="vn.edu.usth.weather.fragments.ForecastFragment"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:layout="@layout/fragment_forecast"/>

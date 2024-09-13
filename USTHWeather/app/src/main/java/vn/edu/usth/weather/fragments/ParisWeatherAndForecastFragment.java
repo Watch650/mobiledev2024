@@ -1,19 +1,21 @@
-package vn.edu.usth.weather;
+package vn.edu.usth.weather.fragments;
 
-import android.graphics.Color;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.TextView;
 
-public class ForecastFragment extends Fragment {
+import vn.edu.usth.weather.R;
+
+/**
+ * A simple {@link Fragment} subclass.
+ * Use the {@link ParisWeatherAndForecastFragment#newInstance} factory method to
+ * create an instance of this fragment.
+ */
+public class ParisWeatherAndForecastFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class ForecastFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public ForecastFragment() {
+    public ParisWeatherAndForecastFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class ForecastFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Blank.
+     * @return A new instance of fragment ParisWeatherAndForecastFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ForecastFragment newInstance(String param1, String param2) {
-        ForecastFragment fragment = new ForecastFragment();
+    public static ParisWeatherAndForecastFragment newInstance(String param1, String param2) {
+        ParisWeatherAndForecastFragment fragment = new ParisWeatherAndForecastFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -53,26 +55,12 @@ public class ForecastFragment extends Fragment {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
         }
-        
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_forecast, container, false);
-//        view.setBackgroundColor(Color.GREEN);
-//        LinearLayout linearLayout = view.findViewById(R.id.main_layout);
-//        TextView textView = view.findViewById(R.id.text_view);
-//        ImageView imageView = view.findViewById(R.id.weather_icon);
-//
-//        linearLayout.setOrientation(LinearLayout.VERTICAL);
-//        textView.setText("Thursday");
-//        imageView.setImageResource(R.drawable.weather);
-
-//        addTextView("Thursday", linearLayout);
-//        addImageView(R.drawable.weather, linearLayout);
-
-
-        return view;
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_paris_weather_and_forecast, container, false);
     }
 }
