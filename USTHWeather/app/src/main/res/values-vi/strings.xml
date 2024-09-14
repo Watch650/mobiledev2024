@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">USTH Weather</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="paris_fragment">PARIS, FRANCE</string>
+    <string name="hanoi_fragment">HANOI, VIETNAM</string>
+    <string name="hcm_fragment">HCM CITY, VIETNAM</string>
+
+    <!--Header-->
+    <string name="header_name">Thời tiết USTH</string>
+
+    <!--    fragment_forecast-->
+    <string name="forecast_mon">Thứ 2</string>
+    <string name="forecast_tue">Thứ 3</string>
+    <string name="forecast_wed">Thứ 4</string>
+    <string name="forecast_thu">Thứ 5</string>
+    <string name="forecast_fri">Thứ 6</string>
+    <string name="forecast_sat">Thứ 7</string>
+    <string name="forecast_sun">Chủ Nhật</string>
+
+    <string name="day1">Ít Mây\n24C - 31C</string>
+    <string name="day2">Mưa To\n24C - 30C</string>
+    <string name="day3">Mưa Vừa\n22C - 23C</string>
+    <string name="day4">Mưa Nhỏ\n22C - 27C</string>
+    <string name="day5">Nhiều Mây\n22C - 30C</string>
+    <string name="day6">Ít Mây\n24C - 31C</string>
+    <string name="day7">Mưa Dông\n25C - 28C</string>
+    <string name="day8">Mưa Nhỏ\n24C - 27C</string>
+    <string name="day9">Mưa Vừa\n24C - 26C</string>
+    <string name="day10">Mưa Nhỏ\n23C - 27C</string>
+
+    <!--    fragment_CITY_weather-->
+    <string name="hanoi">Hà Nội</string>
+    <string name="hcm">TP Hồ Chí Minh</string>
+    <string name="paris">Paris</string>
+
+    <string name="weather_hanoi">26C\nMưa To</string>
+    <string name="weather_hcm">26C\nMưa Dông</string>
+    <string name="weather_paris">12C\nMưa Nhỏ</string>
+</resources>

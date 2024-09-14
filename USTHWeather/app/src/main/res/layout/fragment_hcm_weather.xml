@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#7FFFD4"
+    android:background="@color/weather_background"
     android:tag="second_layout"
     tools:context=".fragments.ParisWeatherFragment"
     android:padding="10dp">
@@ -17,22 +17,22 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
-            android:textSize="20sp"
-            android:text="26C\nThunderstorm" />
+            android:textSize="@dimen/weather_font_size"
+            android:text="@string/weather_hcm" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
-            android:textSize="20sp"
-            android:text="Ho Chi Minh City" />
+            android:textSize="@dimen/weather_font_size"
+            android:text="@string/hcm" />
     </RelativeLayout>
     <!-- TODO: Update blank fragment layout -->
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
+            android:layout_width="@dimen/weather_image_width"
+            android:layout_height="@dimen/weather_image_height"
             android:layout_centerInParent="true"
             android:paddingTop="5dp"
             android:paddingBottom="20dp"

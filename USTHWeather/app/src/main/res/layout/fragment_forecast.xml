@@ -16,253 +16,255 @@
         android:orientation="vertical">
         <LinearLayout
             android:id="@+id/tile1"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/forecast_tile_height"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:padding="20px"
-            android:background="#DFDFFF">
+            android:padding="5dp"
+            android:background="@color/forecast_tile_color">
             <TextView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textSize="15sp"
-                android:text="Mon"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/forecast_mon"/>
             <ImageView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:src="@drawable/cloudy" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:textSize="15sp"
-                android:text="Partly Cloudy\n24C - 31C"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/day1"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/tile2"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/forecast_tile_height"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:padding="20px"
-            android:background="#DFDFFF">
+            android:padding="5dp"
+            android:background="@color/forecast_tile_color">
             <TextView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textSize="15sp"
-                android:text="Tue"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/forecast_tue"/>
             <ImageView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:src="@drawable/rainy"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:textSize="15sp"
-                android:text="Showers\n24C - 30C"/>
+                android:text="@string/day2"
+                android:textSize="@dimen/forecast_font_size" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/tile3"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/forecast_tile_height"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:padding="20px"
-            android:background="#DFDFFF">
+            android:padding="5dp"
+            android:background="@color/forecast_tile_color">
             <TextView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textSize="15sp"
-                android:text="Wed"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/forecast_wed"/>
             <ImageView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:src="@drawable/rainy"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:textSize="15sp"
-                android:text="Rain\n22C - 23C"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/day3"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/tile4"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/forecast_tile_height"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:padding="20px"
-            android:background="#DFDFFF">
+            android:padding="5dp"
+            android:background="@color/forecast_tile_color">
             <TextView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textSize="15sp"
-                android:text="Thu"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/forecast_thu"/>
             <ImageView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:src="@drawable/storm"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:textSize="15sp"
-                android:text="Scattered Showers\n22C - 27C"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/day4"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/tile5"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/forecast_tile_height"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:padding="20px"
-            android:background="#DFDFFF">
+            android:padding="5dp"
+            android:background="@color/forecast_tile_color">
             <TextView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textSize="15sp"
-                android:text="Fri"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/forecast_fri"/>
             <ImageView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:src="@drawable/cloudy"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:textSize="15sp"
-                android:text="Mostly Cloudy\n22C - 30C"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/day5"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/tile6"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/forecast_tile_height"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:padding="20px"
-            android:background="#DFDFFF">
+            android:padding="5dp"
+            android:background="@color/forecast_tile_color">
             <TextView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textSize="15sp"
-                android:text="Sat"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/forecast_sat"/>
             <ImageView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:src="@drawable/cloudy"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:textSize="15sp"
-                android:text="Partly Cloudy\n24C - 31C"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/day6"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/tile7"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/forecast_tile_height"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:padding="20px"
-            android:background="#DFDFFF">
+            android:padding="5dp"
+            android:background="@color/forecast_tile_color">
             <TextView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textSize="15sp"
-                android:text="Sun"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/forecast_sun"/>
             <ImageView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:src="@drawable/thunder"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:textSize="15sp"
-                android:text="Thunderstorms\n25C - 28C"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/day7"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/tile8"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/forecast_tile_height"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:padding="20px"
-            android:background="#DFDFFF">
+            android:padding="5dp"
+            android:background="@color/forecast_tile_color">
             <TextView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textSize="15sp"
-                android:text="Mon"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/forecast_mon"/>
             <ImageView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:src="@drawable/storm"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:textSize="15sp"
-                android:text="Scattered Thunderstorms\n24C - 27C"/>
+                android:text="@string/day8"
+                android:textSize="@dimen/forecast_font_size" />
         </LinearLayout>
         <LinearLayout
             android:id="@+id/tile9"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/forecast_tile_height"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:padding="20px"
-            android:background="#DFDFFF">
+            android:padding="5dp"
+            android:background="@color/forecast_tile_color">
             <TextView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textSize="15sp"
-                android:text="Tue"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/forecast_tue"/>
             <ImageView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:src="@drawable/rainy"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:textSize="15sp"
-                android:text="Showers\n24C - 26C"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/day9"/>
         </LinearLayout>
         <LinearLayout
             android:id="@+id/tile10"
-            android:layout_height="70dp"
+            android:layout_height="@dimen/forecast_tile_height"
             android:layout_width="match_parent"
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
-            android:padding="20px"
-            android:background="#DFDFFF">
+            android:padding="5dp"
+            android:background="@color/forecast_tile_color">
             <TextView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:textSize="15sp"
-                android:text="Wed"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/forecast_wed"/>
             <ImageView
-                android:layout_width="200px"
+                android:layout_width="@dimen/forecast_image_width"
                 android:layout_height="match_parent"
                 android:src="@drawable/storm"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center_vertical"
-                android:textSize="15sp"
-                android:text="Scattered Thunderstorms\n23C - 27C"/>
+                android:textSize="@dimen/forecast_font_size"
+                android:text="@string/day10"/>
         </LinearLayout>
     </LinearLayout>
 

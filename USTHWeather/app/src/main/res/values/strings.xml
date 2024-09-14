@@ -4,4 +4,36 @@
     <string name="paris_fragment">PARIS, FRANCE</string>
     <string name="hanoi_fragment">HANOI, VIETNAM</string>
     <string name="hcm_fragment">HCM CITY, VIETNAM</string>
+
+    <!--Header-->
+    <string name="header_name">USTH Weather</string>
+
+    <!--    fragment_forecast-->
+    <string name="forecast_mon">Mon</string>
+    <string name="forecast_tue">Tue</string>
+    <string name="forecast_wed">Wed</string>
+    <string name="forecast_thu">Thu</string>
+    <string name="forecast_fri">Fri</string>
+    <string name="forecast_sat">Sat</string>
+    <string name="forecast_sun">Sun</string>
+
+    <string name="day1">Partly Cloudy\n24C - 31C</string>
+    <string name="day2">Showers\n24C - 30C</string>
+    <string name="day3">Rain\n22C - 23C</string>
+    <string name="day4">Scattered Showers\n22C - 27C</string>
+    <string name="day5">Mostly Cloudy\n22C - 30C</string>
+    <string name="day6">Partly Cloudy\n24C - 31C</string>
+    <string name="day7">Thunderstorms\n25C - 28C</string>
+    <string name="day8">Scattered Showers\n24C - 27C</string>
+    <string name="day9">Showers\n24C - 26C</string>
+    <string name="day10">Scattered Showers\n23C - 27C</string>
+
+    <!--    fragment_CITY_weather-->
+    <string name="hanoi">Hanoi</string>
+    <string name="hcm">Ho Chi Minh City</string>
+    <string name="paris">Paris</string>
+
+    <string name="weather_hanoi">26C\nHeavy Rain</string>
+    <string name="weather_hcm">26C\nThunderstorm</string>
+    <string name="weather_paris">12C\nScattered Showers</string>
 </resources>
