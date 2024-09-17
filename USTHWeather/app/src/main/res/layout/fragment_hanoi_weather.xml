@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/weather_background"
+    android:background="@drawable/frame"
     android:tag="second_layout"
     tools:context=".fragments.ParisWeatherFragment"
-    android:padding="10dp">
+    android:padding="40dp">
 
     <RelativeLayout
         android:layout_width="match_parent"
